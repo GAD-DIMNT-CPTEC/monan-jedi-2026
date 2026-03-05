@@ -9,13 +9,14 @@ CPTEC / DIMNT / Grupo de Assimilação de Dados (GAD)
 
 Este repositório constitui o ambiente de referência técnica para:
 
-1. Estruturação institucional do MPAS+JEDI;
-2. Transição controlada MPAS para o MONAN no contexto do JEDI;
-3. Consolidação do sistema de assimilação do CPTEC baseado no JEDI;
-4. Garantia de reprodutibilidade computacional;
-5. Execução paralela coordenada das frentes de trabalho.
+1. Estruturação institucional do MPAS+JEDI
+2. Transição controlada MPAS para o MONAN no contexto do JEDI
+3. Consolidação do sistema de assimilação do CPTEC baseado no JEDI
+4. Garantia de reprodutibilidade computacional
+5. Execução paralela coordenada das frentes de trabalho
 
-**Nota: Este documento não é apenas um repositório de código: é o instrumento formal de organização técnica que garantirá a rastreabilidade e validação institucional do projeto.**
+> [!Note]
+> Este documento não é apenas um repositório de código: é o instrumento formal de organização técnica que garantirá a rastreabilidade e validação institucional do projeto.
 
 * 👉 Repositório oficial: https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026
 
@@ -25,9 +26,9 @@ Este repositório constitui o ambiente de referência técnica para:
 
 A execução técnica é controlada exclusivamente via GitHub Issues + GitHub Projects associados a este repositório ([monan-jedi-2026](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026)):
 
-- O [board](https://github.com/orgs/GAD-DIMNT-CPTEC/projects/4) é o único instrumento oficial de acompanhamento;
-- O estado do board deve refletir a realidade técnica;
-- Não são utilizados controles paralelos.
+- O [board](https://github.com/orgs/GAD-DIMNT-CPTEC/projects/4) é o único instrumento oficial de acompanhamento
+- O estado do board deve refletir a realidade técnica
+- Não são utilizados controles paralelos
 
 ---
 
@@ -51,9 +52,9 @@ Build, ambiente e execução devem ser reproduzíveis em instalação limpa.
 
 Toda [issue](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/issues) deve declarar:
 
-- `Depends on`: a issue atual depende da conclusão de uma issue anterior;
-- `Related to`: a issue atual está relacionada a uma outra issue;
-- `Blocks`: o início do desenvolvimento de uma outra issue depende da conclusão da issue atual.
+- `Depends on`: a issue atual depende da conclusão de uma issue anterior
+- `Related to`: a issue atual está relacionada a uma outra issue
+- `Blocks`: o início do desenvolvimento de uma outra issue depende da conclusão da issue atual
 
 Dependências circulares não são permitidas (por exemplo, #22 depende de #22).
 
@@ -73,11 +74,11 @@ Toda issue deve conter:
 
 Uma issue somente poderá ser encerrada quando:
 
-- O código estiver versionado;
-- Os logs estiverem anexados;
-- Houver evidência de execução válida;
-- O critério objetivo for atendido;
-- A revisão técnica for realizada.
+- O código estiver versionado
+- Os logs estiverem anexados
+- Houver evidência de execução válida
+- O critério objetivo for atendido
+- A revisão técnica for realizada
 
 ---
 
@@ -114,18 +115,18 @@ Início formal: **02/03/2026**
 
 O projeto está dividido em frentes de trabalho paralelas:
 
-* Infraestrutura e Spack;
-* MPAS / MONAN;
-* Observações (IODA / UFO);
-* Núcleo Variacional (JEDI);
-* Avaliação e Métricas;
-* Documentação e Reprodutibilidade;
+* Infraestrutura e Spack
+* MPAS / MONAN
+* Observações (IODA / UFO)
+* Núcleo Variacional (JEDI)
+* Avaliação e Métricas
+* Documentação e Reprodutibilidade
 
 Cada frente de trabalho possui:
 
-* Responsável formal;
-* Colaboradores definidos;
-* Entregáveis objetivos.
+* Responsável formal
+* Colaboradores definidos
+* Entregáveis objetivos
 
 ---
 
@@ -236,7 +237,7 @@ Permite auditoria rápida de:
 ## 9. Documentação Estrutural
 
 * `docs/milestones/`
-* `docs/relatorios/
+* `docs/relatorios/`
 * `GOVERNANCA_E_LABELS.md`: leitura obrigatória antes de iniciar execução
 * `README_EXECUCAO_TECNICA.md`: leitura obrigatória antes de iniciar execução
 * `spack/`
@@ -254,5 +255,4 @@ Permite auditoria rápida de:
 ## 11. Status Atual
 
 Data base: 02/03/2026
-Projeto em início formal do M1.
-```
+Projeto em início formal do Milestone `M1`.
