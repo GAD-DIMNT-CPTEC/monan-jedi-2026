@@ -1,80 +1,83 @@
 # MONAN-JEDI 2026
 
-**Plano Técnico Oficial 2026–2027 – Implementação Estruturada JEDI + MONAN**  
+**Planejamento Técnico para a Implementação Estruturada do MONAN+JEDI (2026-2027)**  
 CPTEC / DIMNT / Grupo de Assimilação de Dados (GAD)
 
 ---
 
 ## 1. Propósito do Repositório
 
-Este repositório constitui o ambiente oficial de governança técnica do Plano 2026–2027 para:
+Este repositório constitui o ambiente de referência técnica para:
 
-- Estruturação institucional do MPAS-JEDI  
-- Transição controlada MPAS → MONAN  
-- Consolidação do sistema de assimilação do CPTEC  
-- Garantia de reprodutibilidade computacional  
-- Execução paralela coordenada das frentes técnicas  
+1. Estruturação institucional do MPAS+JEDI;
+2. Transição controlada MPAS para o MONAN no contexto do JEDI;
+3. Consolidação do sistema de assimilação do CPTEC baseado no JEDI;
+4. Garantia de reprodutibilidade computacional;
+5. Execução paralela coordenada das frentes de trabalho.
 
-**Não é apenas um repositório de código.**  
-É o instrumento formal de organização técnica, rastreabilidade e validação institucional do projeto.
+**Nota: Este documento não é apenas um repositório de código: é o instrumento formal de organização técnica que garantirá a rastreabilidade e validação institucional do projeto.**
 
-Repositório oficial:  
-https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026
+* 👉 Repositório oficial: https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026
 
 ---
 
-## 2. Instrumento Oficial de Execução
+## 2. Execução Técnica
 
-A execução técnica é controlada exclusivamente via GitHub Issues + GitHub Projects.
+A execução técnica é controlada exclusivamente via GitHub Issues + GitHub Projects associados a este repositório ([monan-jedi-2026](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026)):
 
-- O board é o único instrumento oficial de acompanhamento.
-- O estado do board deve refletir a realidade técnica.
+- O [board](https://github.com/orgs/GAD-DIMNT-CPTEC/projects/4) é o único instrumento oficial de acompanhamento;
+- O estado do board deve refletir a realidade técnica;
 - Não são utilizados controles paralelos.
 
 ---
 
-## 3. Princípios Fundamentais
+## 3. Diretrizes
 
-O projeto segue regras institucionais claras:
+O projeto é pautado pelas seguintes diretrizes:
 
-### Execução Paralela Coordenada  
-Nenhuma frente técnica pode permanecer inativa por indefinição estrutural.
+### Execução Paralela Coordenada
 
-### Marcos Verificáveis  
-Nenhuma milestone é considerada concluída sem evidência documentada.
+Nenhuma frente de trabalho pode permanecer inativa por indefinição estrutural.
 
-### Reprodutibilidade Obrigatória  
+### Marcos Verificáveis
+
+Nenhuma [milestone](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/milestones) é considerada concluída sem evidência documentada.
+
+### Reprodutibilidade Obrigatória
+
 Build, ambiente e execução devem ser reproduzíveis em instalação limpa.
 
-### Dependências Declaradas e Não Circulares  
-Toda issue deve declarar:
+### Dependências Declaradas e Não Circulares
 
-- Depends on  
-- Blocks  
-- Related to  
+Toda [issue](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/issues) deve declarar:
 
-Dependências circulares são proibidas.
+- `Depends on`: a issue atual depende da conclusão de uma issue anterior;
+- `Related to`: a issue atual está relacionada a uma outra issue;
+- `Blocks`: o início do desenvolvimento de uma outra issue depende da conclusão da issue atual.
 
-### Governança Formal  
+Dependências circulares não são permitidas (por exemplo, #22 depende de #22).
+
+### Governança Formal 
+
 Toda issue deve conter:
 
-- Milestone associada  
-- Labels obrigatórias (area / phase / type)  
-- Responsável formal  
+- Milestone associada: `M1`, `M2`, `M3` etc (vide [milestones](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/milestones) para mais informações);
+- Labels obrigatórias: `area` / `phase` / `type` (vide [labels](https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/blob/main/GOVERNANCA_E_LABELS.md#2-labels) para mais informações);
+- Responsável formal: membro do grupo que será o responsável por desenvolver e acompanhar o desenvolvimento da issue.
 
 ---
 
 ## 4. Fluxo Operacional das Issues
 
-Todo → Pronto para Execução → Em Execução → Em Revisão Técnica → Em Validação → Concluído
+`Todo` → `Pronto para Execução` → `Em Execução` → `Em Revisão Técnica` → `Em Validação` → `Concluído`
 
-Uma issue somente é encerrada quando:
+Uma issue somente poderá ser encerrada quando:
 
-- Código versionado
-- Logs anexados
-- Evidência de execução válida
-- Critério objetivo atendido
-- Revisão técnica realizada
+- O código estiver versionado;
+- Os logs estiverem anexados;
+- Houver evidência de execução válida;
+- O critério objetivo for atendido;
+- A revisão técnica for realizada.
 
 ---
 
@@ -82,47 +85,47 @@ Uma issue somente é encerrada quando:
 
 Início formal: **02/03/2026**
 
-M1 – Consolidação Institucional de Ambiente e Governança de Build  
-02/03/2026 → 30/04/2026  
+### M1 - Consolidação Institucional de Ambiente e Governança de Build  
+* Período: 02/03/2026 → 30/04/2026  
 
-M2 – Baseline Determinístico MPAS Oficial  
-04/05/2026 → 29/05/2026  
+### M2 - Baseline Determinístico MPAS Oficial  
+* Período: 04/05/2026 → 29/05/2026  
 
-M3 – Integração 3DVar FGAT  
-01/06/2026 → 31/07/2026  
+### M3 - Integração 3DVar FGAT  
+* Período: 01/06/2026 → 31/07/2026  
 
-M4 – Avaliação Formal  
-03/08/2026 → 28/08/2026  
+### M4 - Avaliação Formal  
+* Período: 03/08/2026 → 28/08/2026  
 
-M5 – Transição MPAS → MONAN  
-31/08/2026 → 30/10/2026  
+### M5 - Transição MPAS → MONAN  
+* Período: 31/08/2026 → 30/10/2026  
 
-M6 – Consolidação MONAN-JEDI  
-02/11/2026 → 31/12/2026  
+### M6 - Consolidação MONAN-JEDI  
+* Período: 02/11/2026 → 31/12/2026  
 
-M7 – Hybrid 3DVar (Prova de Conceito)  
-04/01/2027 → 26/02/2027  
+### M7 - Hybrid 3DVar (Prova de Conceito)  
+* Período: 04/01/2027 → 26/02/2027  
 
-Milestones no GitHub:  
-https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/milestones
+* 👉 Milestones do projeto no GitHub: https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026/milestones
 
 ---
+
 ## 6. Estrutura Organizacional
 
-O projeto está dividido em domínios paralelos:
+O projeto está dividido em frentes de trabalho paralelas:
 
-* Infraestrutura & Spack
-* MPAS / MONAN
-* Observações (IODA / UFO)
-* Núcleo Variacional (JEDI)
-* Avaliação & Métricas
-* Documentação & Reprodutibilidade
+* Infraestrutura e Spack;
+* MPAS / MONAN;
+* Observações (IODA / UFO);
+* Núcleo Variacional (JEDI);
+* Avaliação e Métricas;
+* Documentação e Reprodutibilidade;
 
-Cada domínio possui:
+Cada frente de trabalho possui:
 
-* Responsável formal
-* Colaboradores definidos
-* Entregáveis objetivos
+* Responsável formal;
+* Colaboradores definidos;
+* Entregáveis objetivos.
 
 ---
 
@@ -176,8 +179,8 @@ gantt
 
 Requisitos:
 
-* gh CLI autenticado
-* jq instalado
+* `gh` CLI autenticado (utilitário de linha de comando para gerenciamento do GitHub; mais informações em [link](https://cli.github.com/));
+* `jq` instalado (utilitário em linha de comando para processar arquivos JSON; mais informações em [link](https://github.com/jqlang/jq)).
 
 ## 8.1 Verificação Estrutural de Issues
 
@@ -198,11 +201,10 @@ Como executar:
 * Toda issue tem milestone
 * Toda issue tem assignee
 * Toda issue tem:
-
   * 1 label area:*
   * 1 label phase:M*
-  * 1 label type:*
-* Não existe auto-dependência (ex: #22 depende de #22)
+  * 1 label type:*  
+* Não existe auto-dependência (por exemplo: #22 depende de #22)
 * Referências (#n) apontam para issues existentes
 
 Se falhar, o avanço do milestone deve ser bloqueado.
@@ -229,25 +231,23 @@ Permite auditoria rápida de:
 * Gargalos
 * Dependências mal definidas
 
-
 ---
 
 ## 9. Documentação Estrutural
 
-* docs/milestones/
-* docs/relatorios/
-* GOVERNANCA_E_LABELS.md (leitura obrigatória antes de iniciar execução)
-* README_EXECUCAO_TECNICA.md (leitura obrigatória antes de iniciar execução)
-* spack/
-* tools/
+* `docs/milestones/`
+* `docs/relatorios/
+* `GOVERNANCA_E_LABELS.md`: leitura obrigatória antes de iniciar execução
+* `README_EXECUCAO_TECNICA.md`: leitura obrigatória antes de iniciar execução
+* `spack/`
+* `tools/`
 
 ---
 
 ## 10. Regra Institucional Crítica
 
-Nenhuma frente técnica pode permanecer bloqueada por erro estrutural de organização.
-
-Caso ocorra, a inconsistência deve ser corrigida imediatamente como falha estrutural de governança.
+> [!IMPORTANT]
+> Nenhuma frente técnica pode permanecer bloqueada por erro estrutural de organização. Caso ocorra, a inconsistência deve ser corrigida imediatamente como falha estrutural de governança.
 
 ---
 
@@ -255,8 +255,4 @@ Caso ocorra, a inconsistência deve ser corrigida imediatamente como falha estru
 
 Data base: 02/03/2026
 Projeto em início formal do M1.
-
-
-→ Rodar uma auditoria cruzada issue por issue contra esse README  
-→ Ou revisar o board visualmente para garantir que nada está fora de milestone.
 ```
