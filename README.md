@@ -15,10 +15,10 @@ Este repositório constitui o ambiente de referência técnica para:
 4. Garantia de reprodutibilidade computacional
 5. Execução paralela coordenada das frentes de trabalho
 
+* 👉 Repositório oficial: https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026
+
 > [!Note]
 > Este documento não é apenas um repositório de código: é o instrumento formal de organização técnica que garantirá a rastreabilidade e validação institucional do projeto.
-
-* 👉 Repositório oficial: https://github.com/GAD-DIMNT-CPTEC/monan-jedi-2026
 
 ---
 
